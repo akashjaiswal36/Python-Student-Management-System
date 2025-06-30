@@ -1,8 +1,7 @@
 import pytest, asyncio, httpx
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from app.main import app
-from app.database import Base, get_db
+from src.database import Base, get_db
 from fastapi.testclient import TestClient
 
 # Use an in‑memory SQLite for tests
